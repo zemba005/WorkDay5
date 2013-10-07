@@ -9,7 +9,15 @@ Public Class Form1
     End Sub
 
     Function FirstName(ByVal name As String) As String
-        Return "Not Implemented Yet"
+
+        Dim firstspace As Integer
+        firstspace = name.IndexOf(" ")
+
+        Dim fName As String
+        fName = name.Substring(0, firstspace)
+
+        Return fName
+
     End Function
 
 End Class
